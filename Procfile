@@ -1,1 +1,1 @@
-web: gunicorn contactsearch:app
+web: gunicorn elisacontactsearch:app

@@ -26,8 +26,8 @@ def extractZip(userMessage):
     if(len(userMessage) == 0):
         zip = ""
     else:
-        #zip = userMessage['subbot'][0]['slotFillingParameter']['plz']
-        zip = userMessage['messages'][0]['data']['content']
+        zip = userMessage['metadata'][0]['slotFillingParameter']['plz']
+        #zip = userMessage['messages'][0]['data']['content']
     return zip
 
 def extractConversationId(userMessage):

@@ -85,7 +85,7 @@ def api_response_message():
     conversationId = extractConversationId(message)
     zip = extractZip(message)
 
-    if(len(zip) == 0):
+    if(len(zip) != 5):
         zip = "Es konnte kein Postleitzahl erkannt werden!"
     else:    
         responseZip = requestZip(zip)

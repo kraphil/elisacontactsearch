@@ -19,7 +19,7 @@ def requestZip(zip):
     response = requests.get(url)
     json_data = response.json()
 
-    response = "Ihr nächstgelegener Mieterverein: Name: " + json_data['results'][0]['name']+", Stadt: "+ json_data['results'][0]['city']+ ", Str.: " + json_data['results'][0]['street']+", PLZ: " + json_data['results'][0]['zip']+", Tel.: " + json_data['results'][0]['phone']+", Mail.: " + json_data['results'][0]['web']+"."
+    response = "Ihr nächstgelegener Mieterverein: Name: " + json_data['results'][0]['name']+", Stadt: "+ json_data['results'][0]['city']+ ", Str.: " + json_data['results'][0]['street']+", PLZ: " + json_data['results'][0]['zip']+", Tel.: " + json_data['results'][0]['phone']+", Mail: " + json_data['results'][0]['email']+", Web:" + json_data['results'][0]['web']+"."
     return response
 
  
